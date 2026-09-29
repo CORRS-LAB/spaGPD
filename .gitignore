@@ -1,0 +1,49 @@
+## vscode
+.idea
+.vscode
+.venv
+target
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Backend runtime data (DuckDB + local file store)
+backend/data/
+*.duckdb
+*.duckdb.wal
+
+# Frontend
+node_modules/
+dist/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*.tsbuildinfo
+
+# start.sh runtime (pids + logs)
+.run/
+
+# Backend application logs (config.toml [logging].file)
+backend/logs/
+
+# Redis dump (created at runtime by redis-server)
+dump.rdb
+backend/dump.rdb
+
+# dyn
+
+*.so
+*.o
+*.a
+*.dll
+*.dylib
